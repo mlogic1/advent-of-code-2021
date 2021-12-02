@@ -9,58 +9,25 @@
 **                                                                              *	^^^[_]^^^
 ********************************************************************************/
 
-#ifndef ADVENT_COMMON
-#define ADVENT_COMMON
+#ifndef ADVENT_DAYS
+#define ADVENT_DAYS
 
-#include <fstream>
-#include <string>
-#include <vector>
+#include <advent-common.h>
 
-using std::string;
-using std::vector;
-
-using StringVector = vector<string>;
-using IntVector = vector<int>;
-
-namespace common
+namespace Day01
 {
-	static bool ReadEntireFileStrings(const std::string& fileName, StringVector& vec)
-	{
-		std::ifstream file(fileName);
-		if (file.good())
-		{
-			std::string line;
-			while (std::getline(file, line))
-			{
-				vec.emplace_back(line);
-			}
-		}
-		else
-		{
-			return false;
-		}
+	void RunDay();
 
-		return true;
-	}
+	void PartA(IntVector& input);
+	void PartB(IntVector& input);	
+}
 
-	static bool ReadEntireFileInts(const std::string& fileName, IntVector& vec)
-	{
-		std::ifstream file(fileName);
-		if (file.good())
-		{
-			std::string line;
-			while (std::getline(file, line))
-			{
-				vec.emplace_back(std::stoi(line));
-			}
-		}
-		else
-		{
-			return false;
-		}
+namespace Day02
+{
+	void RunDay();
 
-		return true;
-	}
+	void PartA(StringVector& input);
+	void PartB(StringVector& input);	
 }
 
 #endif

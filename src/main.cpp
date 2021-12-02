@@ -9,58 +9,19 @@
 **                                                                              *	^^^[_]^^^
 ********************************************************************************/
 
-#ifndef ADVENT_COMMON
-#define ADVENT_COMMON
+#define RUN_DAY(day) Day##day::RunDay();
 
-#include <fstream>
-#include <string>
-#include <vector>
+#include <advent-common.h>
+#include <days.h>
 
-using std::string;
-using std::vector;
-
-using StringVector = vector<string>;
-using IntVector = vector<int>;
-
-namespace common
+void PrintAdventArt()
 {
-	static bool ReadEntireFileStrings(const std::string& fileName, StringVector& vec)
-	{
-		std::ifstream file(fileName);
-		if (file.good())
-		{
-			std::string line;
-			while (std::getline(file, line))
-			{
-				vec.emplace_back(line);
-			}
-		}
-		else
-		{
-			return false;
-		}
 
-		return true;
-	}
-
-	static bool ReadEntireFileInts(const std::string& fileName, IntVector& vec)
-	{
-		std::ifstream file(fileName);
-		if (file.good())
-		{
-			std::string line;
-			while (std::getline(file, line))
-			{
-				vec.emplace_back(std::stoi(line));
-			}
-		}
-		else
-		{
-			return false;
-		}
-
-		return true;
-	}
 }
 
-#endif
+int main(int argc, char* argv[])
+{
+	RUN_DAY(01);
+	RUN_DAY(02);
+	return 0;
+}
