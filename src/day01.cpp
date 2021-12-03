@@ -1,12 +1,12 @@
-/************************  ADVENT OF CODE 2021 **********************************       
+/************************  ADVENT OF CODE 2021 **********************************
 **                         adventofcode.com                                     *       *
 **                                                                              *      /.\
 **                         mlogic1 (https://github.com/mlogic1)                 *     /..'\
 **                                                                              *     /'.'\
 **                                                                              *    /.''.'\
 **                         Day 01 - Sonar Sweep                                 *    /.'.'.\
-**                                                                              *	/'.''.'.\
-**                                                                              *	^^^[_]^^^
+**                                                                              *   /'.''.'.\
+**                                                                              *   ^^^[_]^^^
 ********************************************************************************/
 
 #include <advent-common.h>
@@ -38,7 +38,7 @@ namespace Day01
 
 		for (int i = 0, len = input.size() - 2; i < len; ++i)
 			measurements.emplace_back(input[i] + input[i + 1] + input[i + 2]);
-		
+
 		int biggerMeassurements = 0;
 		int prevMeassurement = measurements.at(0);
 		for (int i = 1, len = measurements.size(); i < len; ++i)
@@ -60,7 +60,7 @@ namespace Day01
 			std::cout << "Day 01 input file fail" << std::endl;
 			return;
 		}
-		
+
 		PartA(input);
 		PartB(input);
 	}

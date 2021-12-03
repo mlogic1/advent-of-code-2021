@@ -1,12 +1,12 @@
-/************************  ADVENT OF CODE 2021 **********************************       
+/************************  ADVENT OF CODE 2021 **********************************
 **                         adventofcode.com                                     *       *
 **                                                                              *      /.\
 **                         mlogic1 (https://github.com/mlogic1)                 *     /..'\
 **                                                                              *     /'.'\
 **                                                                              *    /.''.'\
 **                                                                              *    /.'.'.\
-**                                                                              *	/'.''.'.\
-**                                                                              *	^^^[_]^^^
+**                                                                              *   /'.''.'.\
+**                                                                              *   ^^^[_]^^^
 ********************************************************************************/
 
 #ifndef ADVENT_DAYS
@@ -19,7 +19,7 @@ namespace Day01
 	void RunDay();
 
 	void PartA(IntVector& input);
-	void PartB(IntVector& input);	
+	void PartB(IntVector& input);
 }
 
 namespace Day02
@@ -27,7 +27,15 @@ namespace Day02
 	void RunDay();
 
 	void PartA(StringVector& input);
-	void PartB(StringVector& input);	
+	void PartB(StringVector& input);
+}
+
+namespace Day03
+{
+	void RunDay();
+
+	void PartA(StringVector& input);
+	void PartB(StringVector& input);
 }
 
 #endif
