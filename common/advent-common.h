@@ -14,9 +14,12 @@
 
 #include <fstream>
 #include <string>
+#include <sstream>
 #include <vector>
+#include <type_traits>
 
 using std::string;
+using std::stringstream;
 using std::vector;
 
 using StringVector = vector<string>;
@@ -60,6 +63,18 @@ namespace common
 		}
 
 		return true;
+	}
+
+	static StringVector SplitStringWithDelimiter(const string& data, const char delimiter)
+	{
+		StringVector result;
+		stringstream sstream(data);
+
+		string temp;
+		while (getline(sstream, temp, delimiter))
+				result.push_back(temp);
+
+		return result;
 	}
 }
 

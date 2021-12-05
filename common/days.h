@@ -38,4 +38,12 @@ namespace Day03
 	void PartB(StringVector& input);
 }
 
+namespace Day04
+{
+	void RunDay();
+	class Board;
+	void PartA(const IntVector& numbers, const vector<Board>& boards);
+	void PartB(const IntVector& numbers, const vector<Board>& boards);
+}
+
 #endif
