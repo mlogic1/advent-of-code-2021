@@ -46,4 +46,20 @@ namespace Day04
 	void PartB(const IntVector& numbers, const vector<Board>& boards);
 }
 
+/*namespace Day05
+{
+	void RunDay();
+	
+	void PartA();
+	void PartB();
+}*/
+
+namespace Day06
+{
+	void RunDay();
+	
+	void PartA(const IntVector& input);
+	void PartB(const IntVector& input);
+}
+
 #endif
