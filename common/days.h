@@ -62,4 +62,12 @@ namespace Day06
 	void PartB(const IntVector& input);
 }
 
+namespace Day07
+{
+	void RunDay();
+	
+	void PartA(const IntVector& distances);
+	void PartB(const IntVector& distances);
+}
+
 #endif

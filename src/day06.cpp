@@ -69,7 +69,7 @@ namespace Day06
 
 			if (!common::ReadEntireFileStrings(INPUT_FILE, input))
 			{
-				std::cout << "Day 04 input file fail" << std::endl;
+				std::cout << "Day 06 input file fail" << std::endl;
 				return;
 			}
 
