@@ -27,6 +27,8 @@ int main(int argc, char* argv[])
 	// RUN_DAY(04);
 	// RUN_DAY(05);
 	// RUN_DAY(06);
-	RUN_DAY(07);
+	// RUN_DAY(07);
+	// RUN_DAY(09);
+	RUN_DAY(10);
 	return 0;
 }

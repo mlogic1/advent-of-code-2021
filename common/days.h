@@ -70,4 +70,11 @@ namespace Day07
 	void PartB(const IntVector& distances);
 }
 
+namespace Day10
+{
+	void RunDay();
+	
+	void PartA(const StringVector& input, StringVector& incompleteLines);
+	void PartB(const StringVector& incompleteLines);
+}
 #endif
