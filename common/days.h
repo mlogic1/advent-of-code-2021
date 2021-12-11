@@ -77,4 +77,14 @@ namespace Day10
 	void PartA(const StringVector& input, StringVector& incompleteLines);
 	void PartB(const StringVector& incompleteLines);
 }
+
+namespace Day11
+{
+	void RunDay();
+	
+	class Octopus;
+	void PartA(Octopus** grid);
+	void PartB(Octopus** grid);
+}
+
 #endif
