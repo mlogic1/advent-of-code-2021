@@ -87,4 +87,14 @@ namespace Day11
 	void PartB(Octopus** grid);
 }
 
+
+namespace Day14
+{
+	void RunDay();
+	
+	
+	void PartA(const string& polyTemplate, const std::map<std::pair<char, char>, char>& pairs);
+	void PartB(const string& polyTemplate, const std::map<std::pair<char, char>, char>& pairs);
+}
+
 #endif
