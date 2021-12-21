@@ -77,6 +77,30 @@ namespace common
 
 		return result;
 	}
+
+	template<typename T>
+	static T** CreateGrid(const int rows, const int columns)
+	{
+		T** result = new T* [rows];
+
+		for (int i = 0; i < rows; ++i)
+		{
+			result[i] = new T[columns];
+		}
+
+		return result;
+	}
+
+	template<typename T>
+	static void DeleteGrid(T** grid, int rows, int columns)
+	{
+		for (int i = 0; i < columns; ++i)
+		{
+			delete[] grid[i];
+		}
+
+		delete[] grid;
+	}
 }
 
 #endif

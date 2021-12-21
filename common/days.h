@@ -46,13 +46,13 @@ namespace Day04
 	void PartB(const IntVector& numbers, const vector<Board>& boards);
 }
 
-/*namespace Day05
+namespace Day05
 {
 	void RunDay();
 	
 	void PartA();
 	void PartB();
-}*/
+}
 
 namespace Day06
 {
@@ -68,6 +68,22 @@ namespace Day07
 	
 	void PartA(const IntVector& distances);
 	void PartB(const IntVector& distances);
+}
+
+namespace Day08
+{
+	void RunDay();
+	
+	void PartA();
+	void PartB();
+}
+
+namespace Day09
+{
+	void RunDay();
+	
+	void PartA(const int* const* heightMap);
+	void PartB(const int* const* heightMap);
 }
 
 namespace Day10
@@ -87,6 +103,14 @@ namespace Day11
 	void PartB(Octopus** grid);
 }
 
+namespace Day12
+{
+	void RunDay();
+	
+	struct PathNode;
+	void PartA(vector<PathNode*> cave);
+	void PartB();
+}
 
 namespace Day14
 {
@@ -95,6 +119,14 @@ namespace Day14
 	
 	void PartA(const string& polyTemplate, const std::map<std::pair<char, char>, char>& pairs);
 	void PartB(const string& polyTemplate, const std::map<std::pair<char, char>, char>& pairs);
+}
+
+namespace Day20
+{
+	void RunDay();
+
+	void PartA(const string& algorithm, char** pixels, const int rows, const int columns);
+	void PartB();
 }
 
 #endif
